@@ -269,7 +269,43 @@
       </div>
     </footer>
 
+    <!-- ===== CHATBOT ===== -->
+    <button class="chatbot-toggle" id="chatbot-toggle" aria-label="Abrir asistente virtual">💬</button>
+
+    <div class="chatbot-window" id="chatbot-window">
+      <div class="chatbot-header">
+        <h4>
+          <span style="font-size: 1.2rem;">🤖</span>
+          Asistente TripGo
+        </h4>
+        <button class="close-chat" id="close-chat" aria-label="Cerrar chat">✕</button>
+      </div>
+
+      <div class="chatbot-messages" id="chatbot-messages">
+        <div class="chat-message bot">
+          ¡Hola! Soy el asistente virtual de TripGo Metro. ¿En qué puedo ayudarte hoy? 🚇
+        </div>
+      </div>
+
+      <div class="chatbot-suggestions" id="chatbot-suggestions">
+        <button class="chat-suggestion" onclick="sendSuggestion('¿Dónde están los baños?')">🚻 Baños</button>
+        <button class="chat-suggestion" onclick="sendSuggestion('¿Cómo cargo la SUBE?')">💳 SUBE</button>
+        <button class="chat-suggestion" onclick="sendSuggestion('¿Hay WiFi?')">📶 WiFi</button>
+        <button class="chat-suggestion" onclick="sendSuggestion('¿Dónde como?')">🍔 Comida</button>
+        <button class="chat-suggestion" onclick="sendSuggestion('Horarios del subte')">🕐 Horarios</button>
+        <button class="chat-suggestion" onclick="sendSuggestion('¿Cómo llego al aeropuerto?')">✈️ Ezeiza</button>
+        <button class="chat-suggestion" onclick="sendSuggestion('Accesibilidad')">♿ Accesibilidad</button>
+        <button class="chat-suggestion" onclick="sendSuggestion('Estacionamiento')">🅿️ Estacionamiento</button>
+      </div>
+
+      <div class="chatbot-input">
+        <input type="text" id="chat-input" placeholder="Escribí tu consulta..." onkeypress="if(event.key==='Enter') sendMessage()" />
+        <button onclick="sendMessage()" aria-label="Enviar mensaje">➤</button>
+      </div>
+    </div>
+
     <script src="js/main.js"></script>
     <script src="js/viajes.js"></script>
+    <script src="js/chatbot.js"></script>
   </body>
 </html>
