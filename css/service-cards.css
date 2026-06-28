@@ -65,3 +65,22 @@
   margin-bottom: 15px;
   text-align: center;
 }
+
+/* Responsive for Service Cards */
+@media (width <= 900px) {
+  .service-card {
+    flex: 1 1 calc(50% - 15px);
+  }
+}
+
+@media (width <= 550px) {
+  .service-container {
+    padding: 10px 0;
+  }
+
+  .service-card {
+    flex: 1 1 100%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}

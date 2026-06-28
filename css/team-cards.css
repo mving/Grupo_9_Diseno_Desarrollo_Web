@@ -108,3 +108,27 @@
 .profile-card:hover .profile-img-container img {
   animation: giro-unico 0.5s 1 forwards;
 }
+
+/* Responsive for Team Section */
+@media (width <= 768px) {
+  .team-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+    overflow-x: visible; /* Elimina la necesidad de scroll horizontal */
+  }
+
+  .profile-card {
+    flex: 1 1 calc(50% - 15px); /* Dos columnas en tablets */
+    min-width: 170px;
+    max-width: 240px;
+  }
+}
+
+@media (width <= 480px) {
+  .profile-card {
+    flex: 1 1 100%; /* Una sola columna en celulares */
+    max-width: 280px;
+  }
+}
