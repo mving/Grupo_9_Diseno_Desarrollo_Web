@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Servicios de la Terminal — TripGo Metro</title>
+    <meta name="description" content="Servicios disponibles en el Centro de Transporte Constitución: baños, gastronomía, oficinas de información, estacionamiento, áreas de espera y mapa interactivo." />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- ===== HEADER ===== -->
+    <header class="site-header">
+      <a href="./index.html" class="header-logo">
+        <div class="logo-icon">🚇</div>
+        <span class="logo-text">TripGo Metro</span>
+        <span class="logo-subtitle">Centro de Transporte</span>
+      </a>
+
+      <nav class="main-nav">
+        <a href="./index.html">Inicio</a>
+        <a href="./viajes.html">Consulta de Viajes</a>
+        <a href="./servicios.html" class="active">Servicios</a>
+      </nav>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    </header>
+
+    <!-- Mobile Nav -->
+    <nav class="mobile-nav" id="mobile-nav">
+      <a href="./index.html">Inicio</a>
+      <a href="./viajes.html">Consulta de Viajes</a>
+      <a href="./servicios.html" class="active">Servicios</a>
+    </nav>
+
+    <!-- ===== MAIN ===== -->
+    <main class="site-main">
+
+      <!-- Page Hero -->
+      <div class="page-hero">
+        <div class="container">
+          <div class="section-label" style="justify-content: center;">
+            <span>🏢</span> Terminal Constitución
+          </div>
+          <h1>Servicios de la <strong style="color: var(--color-primary);">Terminal</strong></h1>
+          <p>Conocé todos los servicios disponibles dentro del Centro de Transporte Constitución, su ubicación y horarios de atención.</p>
+        </div>
+      </div>
+
+      <!-- ===== SERVICIOS ===== -->
+      <section class="section" id="servicios" style="padding-top: 0;">
+        <div class="container">
+          <div class="section-header reveal">
+            <div class="section-label">
+              <span>📋</span> Servicios Disponibles
+            </div>
+            <h2 class="section-title">¿Qué encontrás en la terminal?</h2>
+            <p class="section-subtitle">Todos los servicios para que tu paso por Constitución sea cómodo y eficiente.</p>
+          </div>
+
+          <div class="services-grid reveal">
+            <!-- Baños -->
+            <div class="service-card">
+              <div class="service-icon">🚻</div>
+              <h3>Baños</h3>
+              <p>Sanitarios públicos con accesibilidad completa, cambiadores y limpieza permanente.</p>
+              <div class="service-location">📍 Sector A (Planta Baja) y Sector C (Nivel 1)</div>
+              <div class="service-hours">🕐 05:00 — 00:00 hs</div>
+            </div>
+
+            <!-- Oficinas de Información -->
+            <div class="service-card">
+              <div class="service-icon">ℹ️</div>
+              <h3>Oficinas de Información</h3>
+              <p>Atención personalizada para consultas sobre recorridos, horarios, combinaciones y servicios.</p>
+              <div class="service-location">📍 Hall Central — Módulo 1</div>
+              <div class="service-hours">🕐 06:00 — 22:00 hs</div>
+            </div>
+
+            <!-- Locales Gastronómicos -->
+            <div class="service-card">
+              <div class="service-icon">🍔</div>
+              <h3>Locales Gastronómicos</h3>
+              <p>Cafeterías, kioscos, comida rápida y opciones saludables para viajeros.</p>
+              <div class="service-location">📍 Sector B — Patio de Comidas (Nivel 1)</div>
+              <div class="service-hours">🕐 06:00 — 23:00 hs</div>
+            </div>
+
+            <!-- Áreas de Espera -->
+            <div class="service-card">
+              <div class="service-icon">🪑</div>
+              <h3>Áreas de Espera</h3>
+              <p>Zonas de descanso con asientos cómodos, Wi-Fi gratuito y cargadores USB.</p>
+              <div class="service-location">📍 Sector A y B — Ambos niveles</div>
+              <div class="service-hours">🕐 24 horas</div>
+            </div>
+
+            <!-- Estacionamiento -->
+            <div class="service-card">
+              <div class="service-icon">🅿️</div>
+              <h3>Estacionamiento</h3>
+              <p>Estacionamiento cubierto con vigilancia 24hs, capacidad para 350 vehículos.</p>
+              <div class="service-location">📍 Subsuelo — Acceso por calle Lima</div>
+              <div class="service-hours">🕐 24 horas — $1.200/hora</div>
+            </div>
+
+            <!-- Cajeros Automáticos -->
+            <div class="service-card">
+              <div class="service-icon">🏧</div>
+              <h3>Cajeros Automáticos</h3>
+              <p>Red de cajeros Link y Banelco disponibles las 24 horas para extracciones y consultas.</p>
+              <div class="service-location">📍 Hall Central — Junto a Oficina de Información</div>
+              <div class="service-hours">🕐 24 horas</div>
+            </div>
+
+            <!-- Carga SUBE -->
+            <div class="service-card">
+              <div class="service-icon">💳</div>
+              <h3>Carga SUBE</h3>
+              <p>Puntos de carga de tarjeta SUBE automáticos y en kioscos habilitados.</p>
+              <div class="service-location">📍 Accesos principales y Hall Central</div>
+              <div class="service-hours">🕐 05:00 — 23:30 hs</div>
+            </div>
+
+            <!-- Seguridad -->
+            <div class="service-card">
+              <div class="service-icon">🛡️</div>
+              <h3>Seguridad</h3>
+              <p>Personal de seguridad y sistema de cámaras CCTV en toda la terminal.</p>
+              <div class="service-location">📍 Toda la terminal</div>
+              <div class="service-hours">🕐 24 horas</div>
+            </div>
+
+            <!-- Accesibilidad -->
+            <div class="service-card">
+              <div class="service-icon">♿</div>
+              <h3>Accesibilidad</h3>
+              <p>Rampas, ascensores, pisos podotáctiles y señalización inclusiva en todos los sectores.</p>
+              <div class="service-location">📍 Todos los accesos y niveles</div>
+              <div class="service-hours">🕐 24 horas</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== MAPA DE LA TERMINAL ===== -->
+      <section class="section" id="mapa">
+        <div class="container">
+          <div class="section-header reveal">
+            <div class="section-label">
+              <span>🗺️</span> Plano de la Terminal
+            </div>
+            <h2 class="section-title">Mapa del Centro de Transporte</h2>
+            <p class="section-subtitle">Explorá el plano interactivo de la terminal. Hacé clic en cada zona para ver más información.</p>
+          </div>
+
+          <div class="terminal-map-container reveal">
+            <div class="terminal-map" id="terminal-map">
+              <!-- Grid background -->
+              <div style="position: absolute; inset: 0; opacity: 0.04;
+                background-image: linear-gradient(to right, var(--color-primary) 1px, transparent 1px), linear-gradient(to bottom, var(--color-primary) 1px, transparent 1px);
+                background-size: 50px 50px;"></div>
+
+              <!-- === MAP ZONES === -->
+
+              <!-- Andenes / Plataformas -->
+              <div class="map-zone" style="top: 5%; left: 3%; width: 94%; height: 22%; background: rgba(0, 212, 255, 0.12); border: 1px solid rgba(0, 212, 255, 0.3); border-radius: 8px;"
+                   onclick="showZoneInfo('andenes')">
+                <div style="display: flex; gap: 8px; align-items: center;">
+                  <span class="zone-icon">🚌</span>
+                  <span class="zone-label" style="font-size: 0.75rem;">PLATAFORMAS Y ANDENES — Dársenas 1-12</span>
+                </div>
+                <div style="display: flex; gap: 4px; margin-top: 4px;">
+                  <span style="padding: 2px 6px; background: rgba(0,212,255,0.2); border-radius: 4px; font-size: 0.6rem; color: var(--color-primary);">D1</span>
+                  <span style="padding: 2px 6px; background: rgba(0,212,255,0.2); border-radius: 4px; font-size: 0.6rem; color: var(--color-primary);">D2</span>
+                  <span style="padding: 2px 6px; background: rgba(0,212,255,0.2); border-radius: 4px; font-size: 0.6rem; color: var(--color-primary);">D3</span>
+                  <span style="padding: 2px 6px; background: rgba(0,212,255,0.2); border-radius: 4px; font-size: 0.6rem; color: var(--color-primary);">D4</span>
+                  <span style="padding: 2px 6px; background: rgba(0,212,255,0.2); border-radius: 4px; font-size: 0.6rem; color: var(--color-primary);">D5</span>
+                  <span style="padding: 2px 6px; background: rgba(0,212,255,0.2); border-radius: 4px; font-size: 0.6rem; color: var(--color-primary);">...</span>
+                  <span style="padding: 2px 6px; background: rgba(0,212,255,0.2); border-radius: 4px; font-size: 0.6rem; color: var(--color-primary);">D12</span>
+                </div>
+              </div>
+
+              <!-- Acceso Principal -->
+              <div class="map-zone" style="bottom: 3%; left: 35%; width: 30%; height: 12%; background: rgba(76, 217, 100, 0.15); border: 1px solid rgba(76, 217, 100, 0.3);"
+                   onclick="showZoneInfo('acceso')">
+                <span class="zone-icon">🚪</span>
+                <span class="zone-label">Acceso Principal</span>
+              </div>
+
+              <!-- Acceso Lateral Izq -->
+              <div class="map-zone" style="top: 35%; left: 0%; width: 6%; height: 30%; background: rgba(76, 217, 100, 0.12); border: 1px solid rgba(76, 217, 100, 0.25);"
+                   onclick="showZoneInfo('acceso-lat')">
+                <span class="zone-icon" style="font-size: 0.9rem;">🚪</span>
+              </div>
+
+              <!-- Acceso Lateral Der -->
+              <div class="map-zone" style="top: 35%; right: 0%; width: 6%; height: 30%; background: rgba(76, 217, 100, 0.12); border: 1px solid rgba(76, 217, 100, 0.25);"
+                   onclick="showZoneInfo('acceso-lat')">
+                <span class="zone-icon" style="font-size: 0.9rem;">🚪</span>
+              </div>
+
+              <!-- Hall Central -->
+              <div class="map-zone" style="top: 30%; left: 20%; width: 25%; height: 35%; background: rgba(255, 255, 255, 0.04); border: 1px dashed rgba(255,255,255,0.12);"
+                   onclick="showZoneInfo('hall')">
+                <span class="zone-icon">🏛️</span>
+                <span class="zone-label">Hall Central</span>
+              </div>
+
+              <!-- Oficina de Información -->
+              <div class="map-zone" style="top: 32%; left: 8%; width: 10%; height: 15%; background: rgba(0, 212, 255, 0.15); border: 1px solid rgba(0, 212, 255, 0.25);"
+                   onclick="showZoneInfo('info')">
+                <span class="zone-icon">ℹ️</span>
+                <span class="zone-label">Info</span>
+              </div>
+
+              <!-- Baños Sector A -->
+              <div class="map-zone" style="top: 50%; left: 8%; width: 10%; height: 14%; background: rgba(175, 82, 222, 0.15); border: 1px solid rgba(175, 82, 222, 0.3);"
+                   onclick="showZoneInfo('banos')">
+                <span class="zone-icon">🚻</span>
+                <span class="zone-label">Baños</span>
+              </div>
+
+              <!-- Patio de Comidas -->
+              <div class="map-zone" style="top: 30%; left: 48%; width: 22%; height: 35%; background: rgba(255, 149, 0, 0.12); border: 1px solid rgba(255, 149, 0, 0.25);"
+                   onclick="showZoneInfo('gastronomia')">
+                <span class="zone-icon">🍔</span>
+                <span class="zone-label">Patio de Comidas</span>
+              </div>
+
+              <!-- Área de Espera -->
+              <div class="map-zone" style="top: 30%; left: 72%; width: 22%; height: 20%; background: rgba(255, 214, 10, 0.1); border: 1px solid rgba(255, 214, 10, 0.2);"
+                   onclick="showZoneInfo('espera')">
+                <span class="zone-icon">🪑</span>
+                <span class="zone-label">Área de Espera</span>
+              </div>
+
+              <!-- Baños Sector C -->
+              <div class="map-zone" style="top: 52%; left: 72%; width: 10%; height: 14%; background: rgba(175, 82, 222, 0.15); border: 1px solid rgba(175, 82, 222, 0.3);"
+                   onclick="showZoneInfo('banos')">
+                <span class="zone-icon">🚻</span>
+                <span class="zone-label">Baños</span>
+              </div>
+
+              <!-- Cajeros -->
+              <div class="map-zone" style="top: 52%; left: 84%; width: 10%; height: 14%; background: rgba(0, 212, 255, 0.1); border: 1px solid rgba(0, 212, 255, 0.2);"
+                   onclick="showZoneInfo('cajeros')">
+                <span class="zone-icon">🏧</span>
+                <span class="zone-label">ATM</span>
+              </div>
+
+              <!-- SUBE -->
+              <div class="map-zone" style="top: 68%; left: 8%; width: 12%; height: 12%; background: rgba(52, 199, 89, 0.12); border: 1px solid rgba(52, 199, 89, 0.25);"
+                   onclick="showZoneInfo('sube')">
+                <span class="zone-icon">💳</span>
+                <span class="zone-label">Carga SUBE</span>
+              </div>
+
+              <!-- Subte Línea C -->
+              <div class="map-zone" style="top: 68%; left: 72%; width: 22%; height: 14%; background: rgba(74, 144, 226, 0.15); border: 1px solid rgba(74, 144, 226, 0.3);"
+                   onclick="showZoneInfo('subte')">
+                <span class="zone-icon">🚇</span>
+                <span class="zone-label">Acceso Subte Línea C</span>
+              </div>
+
+              <!-- Estacionamiento -->
+              <div class="map-zone" style="top: 82%; left: 8%; width: 22%; height: 14%; background: rgba(139, 149, 165, 0.1); border: 1px solid rgba(139, 149, 165, 0.2);"
+                   onclick="showZoneInfo('estacionamiento')">
+                <span class="zone-icon">🅿️</span>
+                <span class="zone-label">Estacionamiento</span>
+              </div>
+
+              <!-- Seguridad -->
+              <div class="map-zone" style="top: 68%; left: 48%; width: 10%; height: 12%; background: rgba(255, 71, 87, 0.1); border: 1px solid rgba(255, 71, 87, 0.2);"
+                   onclick="showZoneInfo('seguridad')">
+                <span class="zone-icon">🛡️</span>
+                <span class="zone-label">Seguridad</span>
+              </div>
+            </div>
+
+            <!-- Map Legend -->
+            <div class="map-legend">
+              <div class="legend-item">
+                <div class="legend-color" style="background: rgba(0, 212, 255, 0.4);"></div>
+                <span>Plataformas/Andenes</span>
+              </div>
+              <div class="legend-item">
+                <div class="legend-color" style="background: rgba(76, 217, 100, 0.4);"></div>
+                <span>Accesos</span>
+              </div>
+              <div class="legend-item">
+                <div class="legend-color" style="background: rgba(175, 82, 222, 0.4);"></div>
+                <span>Baños</span>
+              </div>
+              <div class="legend-item">
+                <div class="legend-color" style="background: rgba(255, 149, 0, 0.4);"></div>
+                <span>Gastronomía</span>
+              </div>
+              <div class="legend-item">
+                <div class="legend-color" style="background: rgba(255, 214, 10, 0.3);"></div>
+                <span>Área de Espera</span>
+              </div>
+              <div class="legend-item">
+                <div class="legend-color" style="background: rgba(74, 144, 226, 0.4);"></div>
+                <span>Subte</span>
+              </div>
+              <div class="legend-item">
+                <div class="legend-color" style="background: rgba(139, 149, 165, 0.3);"></div>
+                <span>Estacionamiento</span>
+              </div>
+              <div class="legend-item">
+                <div class="legend-color" style="background: rgba(255, 71, 87, 0.3);"></div>
+                <span>Seguridad</span>
+              </div>
+            </div>
+
+            <!-- Zone Info Panel -->
+            <div id="zone-info" class="card" style="margin-top: 1.5rem; display: none;">
+              <div id="zone-info-content"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== PREGUNTAS FRECUENTES ===== -->
+      <section class="section" id="faq">
+        <div class="container">
+          <div class="section-header reveal">
+            <div class="section-label">
+              <span>❓</span> Preguntas Frecuentes
+            </div>
+            <h2 class="section-title">¿Tenés dudas?</h2>
+            <p class="section-subtitle">Respuestas rápidas a las consultas más comunes. También podés usar nuestro asistente virtual.</p>
+          </div>
+
+          <div class="grid grid-2 reveal" style="max-width: 900px; margin: 0 auto;">
+            <div class="card">
+              <h4 style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                <span style="color: var(--color-primary);">▸</span>
+                ¿Cómo cargo la SUBE?
+              </h4>
+              <p style="font-size: 0.9rem;">Podés cargar tu tarjeta SUBE en los puntos automáticos ubicados en los accesos principales y en el Hall Central. También en kioscos habilitados dentro de la terminal.</p>
+            </div>
+            <div class="card">
+              <h4 style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                <span style="color: var(--color-primary);">▸</span>
+                ¿Hay Wi-Fi gratuito?
+              </h4>
+              <p style="font-size: 0.9rem;">Sí, la terminal cuenta con Wi-Fi gratuito en todas las áreas de espera. Conectate a la red "TripGo-WiFi" e ingresá tu email para acceder.</p>
+            </div>
+            <div class="card">
+              <h4 style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                <span style="color: var(--color-primary);">▸</span>
+                ¿Dónde están los baños?
+              </h4>
+              <p style="font-size: 0.9rem;">Los sanitarios se encuentran en el Sector A (Planta Baja) y en el Sector C (Nivel 1). Ambos cuentan con accesibilidad y cambiadores.</p>
+            </div>
+            <div class="card">
+              <h4 style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                <span style="color: var(--color-primary);">▸</span>
+                ¿Cómo llego al aeropuerto?
+              </h4>
+              <p style="font-size: 0.9rem;">El Shuttle a Ezeiza sale desde la Plataforma 12, Sector C, cada 30 minutos. El viaje dura aproximadamente 55 minutos.</p>
+            </div>
+            <div class="card">
+              <h4 style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                <span style="color: var(--color-primary);">▸</span>
+                ¿Hay estacionamiento?
+              </h4>
+              <p style="font-size: 0.9rem;">Sí, contamos con estacionamiento cubierto en el subsuelo con acceso por calle Lima. Capacidad para 350 vehículos, $1.200/hora.</p>
+            </div>
+            <div class="card">
+              <h4 style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                <span style="color: var(--color-primary);">▸</span>
+                ¿La terminal es accesible?
+              </h4>
+              <p style="font-size: 0.9rem;">Sí, todos los sectores cuentan con rampas, ascensores, pisos podotáctiles y señalización inclusiva. Personal de asistencia disponible en Información.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ===== CHATBOT ===== -->
+    <button class="chatbot-toggle" id="chatbot-toggle" aria-label="Abrir asistente virtual">💬</button>
+
+    <div class="chatbot-window" id="chatbot-window">
+      <div class="chatbot-header">
+        <h4>
+          <span style="font-size: 1.2rem;">🤖</span>
+          Asistente TripGo
+        </h4>
+        <button class="close-chat" id="close-chat" aria-label="Cerrar chat">✕</button>
+      </div>
+
+      <div class="chatbot-messages" id="chatbot-messages">
+        <div class="chat-message bot">
+          ¡Hola! Soy el asistente virtual de TripGo Metro. ¿En qué puedo ayudarte hoy? 🚇
+        </div>
+      </div>
+
+      <div class="chatbot-suggestions" id="chatbot-suggestions">
+        <button class="chat-suggestion" onclick="sendSuggestion('¿Dónde están los baños?')">🚻 Baños</button>
+        <button class="chat-suggestion" onclick="sendSuggestion('¿Cómo cargo la SUBE?')">💳 SUBE</button>
+        <button class="chat-suggestion" onclick="sendSuggestion('¿Hay WiFi?')">📶 WiFi</button>
+        <button class="chat-suggestion" onclick="sendSuggestion('¿Dónde como?')">🍔 Comida</button>
+        <button class="chat-suggestion" onclick="sendSuggestion('Horarios del subte')">🕐 Horarios</button>
+        <button class="chat-suggestion" onclick="sendSuggestion('¿Cómo llego al aeropuerto?')">✈️ Ezeiza</button>
+        <button class="chat-suggestion" onclick="sendSuggestion('Accesibilidad')">♿ Accesibilidad</button>
+        <button class="chat-suggestion" onclick="sendSuggestion('Estacionamiento')">🅿️ Estacionamiento</button>
+      </div>
+
+      <div class="chatbot-input">
+        <input type="text" id="chat-input" placeholder="Escribí tu consulta..." onkeypress="if(event.key==='Enter') sendMessage()" />
+        <button onclick="sendMessage()" aria-label="Enviar mensaje">➤</button>
+      </div>
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="logo-icon">🚇</div>
+          <span>TripGo Metro</span>
+        </div>
+        <div class="footer-info">
+          <p>UADE — Diseño y Desarrollo Web — 2026</p>
+          <p>Grupo 9 — Centro de Transporte Inteligente</p>
+        </div>
+        <div class="footer-links">
+          <a href="../index.html">Consultora</a>
+          <a href="./index.html">Inicio</a>
+          <a href="./viajes.html">Viajes</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/servicios.js"></script>
+  </body>
+</html>
